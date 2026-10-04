@@ -1,0 +1,7 @@
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/Assignment1
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/appsettings.Development.json
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/appsettings.json
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/Assignment1.dll
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/Assignment1.deps.json
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/Assignment1.runtimeconfig.json
+/home/braedonk/CET-CS/Level06/NET/Assignment1/publish/Assignment1.pdb
