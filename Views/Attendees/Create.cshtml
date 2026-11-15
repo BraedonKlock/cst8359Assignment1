@@ -1,0 +1,41 @@
+@model Assignment1.Models.Attendee
+
+@{
+    ViewData["Title"] = "Register Attendee";
+}
+
+<h1>Register Attendee</h1>
+
+<h3>Event: @ViewBag.EventTitle</h3>
+
+<form asp-controller="Attendees"
+      asp-action="Create"
+      asp-route-eventId="@ViewBag.EventId"
+      method="post">
+
+    <div asp-validation-summary="ModelOnly"
+         class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Sign Up
+    </button>
+
+    <a asp-controller="Attendees"
+       asp-action="Index"
+       asp-route-eventId="@ViewBag.EventId"
+       class="btn btn-secondary">
+        Cancel
+    </a>
+</form>

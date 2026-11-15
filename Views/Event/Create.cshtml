@@ -1,0 +1,63 @@
+@model Assignment1.Models.Event
+
+@{
+    ViewData["Title"] = "Create Event";
+}
+
+<h1>Create Event</h1>
+
+<form asp-controller="Event"
+      asp-action="Create"
+      method="post"
+      enctype="multipart/form-data">
+
+    <div asp-validation-summary="All"
+         class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description"
+                  class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Date" class="form-label"></label>
+        <input asp-for="Date"
+               type="datetime-local"
+               class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Location" class="form-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="bannerImage" class="form-label">
+            Banner Image
+        </label>
+
+        <input type="file"
+               id="bannerImage"
+               name="bannerImage"
+               class="form-control"
+               accept="image/jpeg,image/png,image/gif,image/webp" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Create
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Back to List
+    </a>
+</form>

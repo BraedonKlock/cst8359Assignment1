@@ -1,0 +1,66 @@
+@model Assignment1.Models.Event
+
+@{
+    ViewData["Title"] = "Manage Attendees";
+}
+
+<h1>Manage Attendees - @Model.Title</h1>
+
+<p>
+    <a asp-controller="Attendees"
+       asp-action="Create"
+       asp-route-eventId="@Model.Id"
+       class="btn btn-primary">
+        Add Attendee
+    </a>
+</p>
+
+<h2>Current Attendees (@Model.Attendees.Count)</h2>
+
+@if (Model.Attendees.Count == 0)
+{
+    <p>No attendees registered yet.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var attendee in Model.Attendees)
+            {
+                <tr>
+                    <td>@attendee.Name</td>
+                    <td>@attendee.Email</td>
+                    <td>
+                        <a asp-controller="Attendees"
+                           asp-action="Edit"
+                           asp-route-eventId="@Model.Id"
+                           asp-route-id="@attendee.Id">
+                            Edit
+                        </a> |
+
+                        <a asp-controller="Attendees"
+                           asp-action="Delete"
+                           asp-route-eventId="@Model.Id"
+                           asp-route-id="@attendee.Id">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-controller="Event"
+   asp-action="Details"
+   asp-route-id="@Model.Id"
+   class="btn btn-secondary">
+    Back to Event
+</a>

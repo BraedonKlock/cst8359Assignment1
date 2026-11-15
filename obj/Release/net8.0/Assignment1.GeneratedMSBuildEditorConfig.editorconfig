@@ -18,6 +18,38 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/braedonk/CET-CS/Level06/NET/Assignment1
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Attendees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXR0ZW5kZWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Attendees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXR0ZW5kZWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Attendees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXR0ZW5kZWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Attendees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXR0ZW5kZWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Event/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Event/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Event/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Event/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/braedonk/CET-CS/Level06/NET/Assignment1/Views/Event/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
